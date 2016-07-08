@@ -83,7 +83,7 @@ function islandora_bagit_admin_settings() {
     '#type' => 'textfield',
     '#size' => 60,
     '#default_value' => variable_get('islandora_bagit_library_dir', 'BagItPHP'),
-    '#description' => t("Directory where the Scholars' Lab BagIt for PHP library
+    '#description' => t("xxxxx Directory where the Scholars' Lab BagIt for PHP library
       is installed, relative to sites/all/libraries. Do not use a leading or
       trailing slash."),
     '#maxlength' => 255,
@@ -316,6 +316,8 @@ function islandora_bagit_admin_settings() {
 function islandora_bagit_create_bag($islandora_object) {
   // First, check to see if the object is a collection, and if it is,
   // reroute to the relevant batch function.
+
+/**
   foreach ($islandora_object as $ds) {
     if ($ds->id == 'COLLECTION_POLICY') {
       if (variable_get('islandora_bagit_multiple_bag_type', 'object') == 'object') {
@@ -327,7 +329,7 @@ function islandora_bagit_create_bag($islandora_object) {
       return array();
     }
   }
-
+*/
   // Sanitize the PID so it is usable in file paths.
   $pid = str_replace(array(':', '-'), '_', $islandora_object->id);
 
