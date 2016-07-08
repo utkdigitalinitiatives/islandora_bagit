@@ -83,7 +83,7 @@ function islandora_bagit_admin_settings() {
     '#type' => 'textfield',
     '#size' => 60,
     '#default_value' => variable_get('islandora_bagit_library_dir', 'BagItPHP'),
-    '#description' => t(":DDDDDirectory where the Scholars' Lab BagIt for PHP library
+    '#description' => t("Directory where the Scholars' Lab BagIt for PHP library
       is installed, relative to sites/all/libraries. Do not use a leading or
       trailing slash."),
     '#maxlength' => 255,
