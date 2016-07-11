@@ -41,7 +41,7 @@ function islandora_bagit_plugin_object_ds_utk_init($islandora_object, $tmp_ds_di
       );
     }
   }
-
+ //
   if (count($files_to_add)) {
     return $files_to_add;
   }
